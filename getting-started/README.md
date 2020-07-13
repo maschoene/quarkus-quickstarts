@@ -26,7 +26,7 @@ for help setting up your environment.
 
 Launch the Maven build on the checked out sources of this demo:
 
-> ./mvnw install
+> ./mvnw install -Dconfig.arbitrary.sysprop=sysprop
 
 ### Live coding with Quarkus
 
