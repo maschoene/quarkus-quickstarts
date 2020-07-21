@@ -5,11 +5,13 @@ import static org.hamcrest.CoreMatchers.is;
 
 import java.util.UUID;
 
+import io.quarkus.test.common.QuarkusTestResource;
 import org.junit.jupiter.api.Test;
 
 import io.quarkus.test.junit.QuarkusTest;
 
 @QuarkusTest
+@QuarkusTestResource(CustomQuarkusTestResourceLifecycleManager.class)
 public class GreetingResourceTest {
 
     @Test
